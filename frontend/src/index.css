@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Enable dark mode */
+@layer base {
+  html {
+    @apply bg-gray-100 text-gray-800;
+  }
+  html.dark {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 6s ease infinite;
+}
+
+.glitch-text {
+  position: relative;
+  display: inline-block;
+  color: #67e8f9; /* cyan glow */
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff; }
+  25% { text-shadow: -2px 2px #ff00ff, 2px -2px #00ffff; }
+  50% { text-shadow: 2px -2px #ff00ff, -2px 2px #00ffff; }
+  75% { text-shadow: -2px -2px #ff00ff, 2px 2px #00ffff; }
+  100% { text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff; }
+}
