@@ -25,7 +25,7 @@ export default function Home({ navigate }) {
         transition={{ duration: 1 }}
       >
         <h1 className="text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">
-          Welcome to SecureText AI
+          Introducing 
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-gray-300">
           SecureText AI is your smart spam and scam detection tool 🚀. 
